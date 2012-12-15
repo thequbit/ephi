@@ -99,6 +99,16 @@ div.registerbox
 	padding-bottom: 30px;
 }
 
+/*
+ *
+ *	Index.php stuff
+ *
+ */
+
+#indexinfowrapper
+{
+	
+}
 
 /*
  *
@@ -191,4 +201,36 @@ div.submainarea
 {
 	vertical-align: middle;
 	top:200px;
+}
+
+/*
+ *
+ *	File Upload
+ *
+ */
+div.droparea
+{
+    /*background-color: #DD888;*/
+    border: 3px dashed #000000;
+    float: left;
+    font-size: 48px;
+    font-weight: bold;
+    height: 520px;
+    line-height: 530px;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+    width: 300px;
+}
+
+#droparea.hover {
+    background-color: #CCCCCC;
+}
+#droparea.uploading {
+    background: #EEEEEE url(loading.gif) center 30% no-repeat;
+}
+
+div.uploadinfo
+{
+	display: inline-block;
 }
