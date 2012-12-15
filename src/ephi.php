@@ -21,7 +21,7 @@
 	
 	<link href="css/main.css" rel="stylesheet" type="text/css">
 	
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/jquery.js" type="text/javascript"></script>
 	
 	<script type="text/javascript">
 	
@@ -123,14 +123,6 @@
 			
 			</div>
 		
-			<div id="topstatus" class="topstatus">
-			
-			</div>
-		
-			<div id="leftlinks" class="leftlinks">
-			
-			</div>
-		
 			<div id="mainarea" class="mainarea">
 			
 				<div id="mainhome" class="submainarea">
@@ -150,7 +142,17 @@
 				</div>
 			
 				<div id="mainuploadfiles" class="submainarea">
-					lets upload some files
+					
+					<div id="droparea" class="droparea">Drop Files</div>
+					
+					<div class="uploadinfo">
+						<div>Files left: <span id="count">0</span></div>
+						<div>Destination url: <input id="url" value="upload.php"/></div>
+						<h2>Result:</h2>
+						<div id="result"></div>
+						<canvas width="500" height="20"></canvas>
+					</div>
+					
 				</div>
 				
 				<div id="mainconfigphp" class="submainarea">
@@ -177,6 +179,8 @@
 		</div>
 		
 	</div>
+
+	<script src="js/uploadscript.js" type="text/javascript"></script>
 
 </body>
 </html>
