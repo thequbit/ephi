@@ -1,0 +1,86 @@
+
+/*
+ * 
+ * Main wrapper that is on every page 
+ *
+ */
+
+/* set background of each page */
+body
+{
+	background-image:url('/media/white_wall.png');
+	background-repeat:repeat-y repeat-x;
+}
+
+/* reset browser defaults */
+*
+{
+	margin:0;
+	padding:0;
+}
+
+/*
+ *
+ *	Site Top
+ *
+ */
+
+/* full site wrapper - nothing goes here */
+div.sitetop
+{
+}
+
+/* set the width of our site, and center it */
+div.topwrapper
+{
+	width:800px;
+	margin:0 auto;
+}
+
+/*
+ *
+ * 	General
+ *
+ */
+
+/* General user input */
+div.userinput
+{
+	position: relative;
+	padding: 4px 4px;
+}
+
+/* General text info field, not a label */
+div.info
+{
+	position: relative;
+	padding: 4px 4px;
+}
+
+/*
+ *
+ *	Login page
+ *
+ */
+
+/* make the login link float right */
+div.loginbox
+{
+	position:relative;
+	margin-left: auto;
+    margin-right: auto;
+	top: 100px;
+	width:300px;
+	border:2px solid #666666;
+	background:#EEEEEE;
+	padding:30px 30px;
+	border-radius:8px;
+}
+
+/* Register link */
+div.registerbox
+{
+	position:relative;
+	float: right;
+	padding-bottom: 30px;
+}
