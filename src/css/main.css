@@ -8,7 +8,7 @@
 /* set background of each page */
 body
 {
-	background-image:url('/media/white_wall.png');
+	background-image:url('/media/debut_dark.png');
 	background-repeat:repeat-y repeat-x;
 }
 
@@ -33,8 +33,13 @@ div.sitetop
 /* set the width of our site, and center it */
 div.topwrapper
 {
-	width:800px;
-	margin:0 auto;
+	position: relative;
+	top: 20px;
+	width:900px;
+	height:700px;
+	margin: auto;
+	background:#444444;
+	border-radius:6px;
 }
 
 /*
@@ -55,6 +60,15 @@ div.info
 {
 	position: relative;
 	padding: 4px 4px;
+	display: inline-block;
+}
+
+div.maininfo
+{
+	position:relative;
+	margin: 0 auto;
+	padding: 4px 4px;
+	width:500px;
 }
 
 /*
@@ -71,7 +85,7 @@ div.loginbox
     margin-right: auto;
 	top: 100px;
 	width:300px;
-	border:2px solid #666666;
+	border:1px solid #666666;
 	background:#EEEEEE;
 	padding:30px 30px;
 	border-radius:8px;
@@ -83,4 +97,98 @@ div.registerbox
 	position:relative;
 	float: right;
 	padding-bottom: 30px;
+}
+
+
+/*
+ *
+ *	Main page ephi.php 
+ *
+ */
+
+/* top links to different div pages */
+div.toplinks
+{
+	position:relative;
+	margin-left: auto;
+    margin-right: auto;
+	top: 20px;
+	width: 850px;
+	border:1px solid #666666;
+	background:#EEEEEE;
+	padding:8px;
+	border-radius:8px;
+}
+
+/* top link */
+div.toplink
+{
+	position:relative;
+	padding: 8px, 8px;
+	display: inline-block;
+}
+
+a.link
+{
+	color: #1010E0;
+}
+
+/* make our links do something so the user has some feedback on what they are doing */
+a.link:hover
+{
+	text-decoration:none;
+	font-weight:bold;
+	cursor: pointer;
+}
+
+/* status of your current interaction with the instance */
+div.topstatus
+{
+
+}
+
+/* main area where all the magic happens */
+div.mainarea
+{
+	position:relative;
+	margin-left: auto;
+    margin-right: auto;
+	top: 40px;
+	width: 850px;
+	height: 590px;
+	border:1px solid #666666;
+	background:#EEEEEE;
+	padding:4px 4px;
+	border-radius:8px;
+}
+
+/* this is the actual div pages that the user is using to interface to ephi */
+div.submainarea
+{
+	position:relative;
+	top:20px;
+	width:810px;
+	height:550px;
+	margin: auto;
+}
+
+#maininfowrapper
+{
+	/*margin: 0 auto;*/
+	position:relative;
+	vertical-align: middle;
+	margin: auto;
+	padding:4px 4px;
+	text-align:center;
+}
+
+#logoutconfirm
+{
+	text-align:center;
+}
+
+#mainhome
+{
+	vertical-align: middle;
+	top:200px;
 }
